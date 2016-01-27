@@ -1,5 +1,3 @@
 import ExpressProvider from './express-provider';
 
-export {
-    ExpressProvider
-};
+export default ExpressProvider;

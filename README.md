@@ -12,7 +12,7 @@ Preview
 ```js
 import {Cluster, GuidGenerator, FrameworkProvider, Configuration, Logger} from 'microphone-core';
 import ConsulProvider from 'microphone-consul';
-import {ExpressProvider} from 'microphone-express';
+import ExpressProvider from 'microphone-express';
 
 import express from 'express'
 
