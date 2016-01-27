@@ -1,5 +1,3 @@
-import "babel-polyfill";
-
 import chai from "chai";
 import sinon from "sinon";
 
@@ -47,15 +45,15 @@ describe("ExpressProvider:", () => {
 
         it("should attach existing express server and register status handler", async (done)=> {
 
-            let app = express();
+            let server = express();
 
-            await startTest(app, done);
+            await startTest(server, done);
         });
 
         async function startTest(server, done) {
-            let port = 8087, statusResponse = 'ok';
+            let port = 3001, statusResponse = 'ok';
 
-            configurationMock.expects("getPort").returns(port).twice();
+            configurationMock.expects("getPort").returns(port).once();
             loggerMock.expects("info").withArgs(`Example app listening on port ${port}!`).once();
 
             let serverInstance = await expressProvider.start(server, "test-svc", "v1");
