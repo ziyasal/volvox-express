@@ -2,7 +2,7 @@ import chai from "chai";
 import sinon from "sinon";
 
 import request from 'request';
-import {ExpressProvider} from "../src/index";
+import ExpressProvider from "../src/index";
 
 import express from 'express';
 
