@@ -1,6 +1,5 @@
 export default class StatusController {
-    static respond(req, res, next) {
+    static respond(req, res) {
         res.status(200).send('ok');
-        next();
     }
 }

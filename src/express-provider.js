@@ -16,13 +16,15 @@ export default class ExpressProvider extends FrameworkProvider {
 
         app.get('/status', StatusController.respond);
 
-        return new Promise((resolve, reject)=> {
-            var port = this._configuration.getPort() || 3000;
+        return new Promise(async (resolve, reject)=> {
+            var port = await this._configuration.getPort() || 3000;
+            let uri = `http://localhost:${port}`;
+
             let serverInstance = app.listen(port, (err)=> {
                 if (err) return reject(err);
 
                 this._logger.info(`Example app listening on port ${port}!`);
-                resolve(serverInstance);
+                resolve({serverInstance: serverInstance, uri: uri});
             });
         })
     }

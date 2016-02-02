@@ -56,7 +56,7 @@ describe("ExpressProvider:", () => {
             configurationMock.expects("getPort").returns(port).once();
             loggerMock.expects("info").withArgs(`Example app listening on port ${port}!`).once();
 
-            let serverInstance = await expressProvider.start(server, "test-svc", "v1");
+            let result = await expressProvider.start(server, "test-svc", "v1");
 
             request(`http://localhost:${port}/status`, (error, response, body)=> {
 
@@ -64,7 +64,7 @@ describe("ExpressProvider:", () => {
 
                 body.should.be.equal(statusResponse);
 
-                serverInstance.close();
+                result.serverInstance.close();
                 done();
             });
         }

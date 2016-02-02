@@ -1,6 +1,6 @@
 {
   "name": "microphone-express",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Express.js provider for microphone.js Microservice framework",
   "main": "lib/index.js",
   "scripts": {
