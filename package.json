@@ -1,6 +1,6 @@
 {
   "name": "microphone-express",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Express.js provider for microphone.js Microservice framework",
   "main": "lib/index.js",
   "scripts": {
@@ -25,7 +25,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.4",
-    "microphone-core": "^1.0.2"
+    "microphone-core": "^1.1.0"
   },
   "devDependencies": {
     "babel-cli": "^6.4.5",

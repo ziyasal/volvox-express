@@ -3,14 +3,29 @@ import {FrameworkProvider} from 'microphone-core'
 import express from 'express';
 import StatusController from './status'
 
+/**
+ *
+ */
 export default class ExpressProvider extends FrameworkProvider {
 
+    /**
+     *
+     * @param configuration
+     * @param logger
+     */
     constructor(configuration, logger) {
         super();
         this._configuration = configuration;
         this._logger = logger;
     }
 
+    /**
+     *
+     * @param server
+     * @param serviceName
+     * @param version
+     * @returns {Promise}
+     */
     start(server, serviceName, version) {
         let app = server || express();
 
