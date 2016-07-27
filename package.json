@@ -1,7 +1,7 @@
 {
-  "name": "microphone-express",
-  "version": "1.1.0",
-  "description": "Express.js provider for microphone.js Microservice framework",
+  "name": "volvox-express",
+  "version": "1.0.0",
+  "description": "Express.js provider for volvox.js Microservice framework",
   "main": "lib/index.js",
   "scripts": {
     "compile": "babel src --out-dir lib",
@@ -19,27 +19,28 @@
       "transform-regenerator"
     ]
   },
-  "author": [
-    "ziyasal <sarikayaziya@gmail.com>"
-  ],
+  "author": "ziyasal <sarikayaziya@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "bunyan": "^1.8.1",
     "express": "^4.13.4",
-    "microphone-core": "^1.1.0"
+    "volvox-core": "^1.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.4.5",
-    "babel-preset-es2015": "^6.3.13",
+    "babel-eslint": "^6.1.2",
     "babel-plugin-syntax-async-functions": "^6.3.13",
     "babel-plugin-transform-regenerator": "^6.4.4",
     "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.3.13",
+    "bunyan": "^1.8.1",
     "chai": "^3.4.1",
-    "eslint": "^1.10.3",
+    "eslint": "^3.1.1",
+    "express": "^4.13.4",
     "gulp": "^3.9.0",
     "isparta": "^4.0.0",
     "mocha": "^2.3.4",
     "request": "^2.67.0",
-    "sinon": "^1.17.2",
-    "express": "^4.13.4"
+    "sinon": "^1.17.2"
   }
 }

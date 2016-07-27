@@ -2,7 +2,7 @@ import chai from "chai";
 import sinon from "sinon";
 
 import request from 'request';
-import ExpressProvider from "../src/index";
+import ExpressProvider from "../src/express-provider";
 
 import express from 'express';
 
@@ -51,7 +51,7 @@ describe("ExpressProvider:", () => {
         });
 
         async function startTest(server, done) {
-            let port = 3001, statusResponse = 'ok';
+            let port = 3006, statusResponse = 'ok';
 
             configurationMock.expects("getPort").returns(port).once();
             loggerMock.expects("info").withArgs(`Example app listening on port ${port}!`).once();
