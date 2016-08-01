@@ -2,7 +2,7 @@
 ![](https://avatars3.githubusercontent.com/u/16361502?v=3&s=200)  ![](http://svgporn.com/logos/express.svg)  
 
 Express.js provider for volvox.js Microservice framework  
-[![Build Status](https://travis-ci.org/microphonejs/microphone-express.svg?branch=master)](https://travis-ci.org/microphonejs/microphone-express) [![Coverage Status](https://coveralls.io/repos/github/microphonejs/microphone-express/badge.svg?branch=master)](https://coveralls.io/github/microphonejs/microphone-express?branch=master)
+[![Build Status](https://travis-ci.org/volvoxjs/volvox-express.svg?branch=master)](https://travis-ci.org/volvoxjs/volvox-express) [![Coverage Status](https://coveralls.io/repos/github/microphonejs/microphone-express/badge.svg?branch=master)](https://coveralls.io/github/microphonejs/microphone-express?branch=master)
 
 Preview
 ==================
