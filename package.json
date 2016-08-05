@@ -1,6 +1,6 @@
 {
   "name": "volvox-express",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Express.js provider for volvox.js Microservice framework",
   "main": "lib/index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   "dependencies": {
     "bunyan": "^1.8.1",
     "express": "^4.13.4",
-    "volvox-core": "^1.0.0"
+    "volvox-core": "^0.1.0"
   },
   "devDependencies": {
     "babel-cli": "^6.4.5",
